@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    each message in messages
+      li
+        p= message.text
+        p User: #{message.user}
+        p Added: #{message.added}
+li
+    a(href="/new") Add New Message

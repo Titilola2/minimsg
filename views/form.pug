@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  form(method="POST" action="/new")
+    label(for="messageUser") Author's Name:
+    input(type="text" name="messageUser")
+    br
+    label(for="messageText") Message Text:
+    input(type="text" name="messageText")
+    br
+    button(type="submit") Submit
